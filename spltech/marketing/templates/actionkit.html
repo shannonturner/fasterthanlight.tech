@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section>
+
+    <div class="bg-card my-4 row">
+
+        <article class="d-flex flex-column col-lg-3">
+            <h1 class="p-4">ActionKit</h1>
+            <img class="m-4 img-fluid d-none d-lg-block" src="{% static 'images/orion.png' %}" alt="Adapted from Project Orion propulsion module design (NASA, Public Domain)">
+        </article>
+
+        <article class="p-4 col-lg-9">
+            <p>I have more than a decade of experience working with ActionKit: <strong>I was an ActionKit client from 2014-2018, then joined the ActionKit team and spent 7 years developing powerful new features</strong> for the platform.</p>
+
+            <p>I'm still working for ActionKit as a contractor, which means I can help you even more closely than when I was an employee.</p>
+
+            <p>I'd love to help you:</p>
+            <ul>
+                <li>discover why ActionKit is such a beloved CRM and how it can power your organization or campaign</li>
+                <li>import or sync data from another system into ActionKit</li>
+                <li>get the most out of your ActionKit account</li>
+                <li>create custom reports, clean up old data, or handle any questions that come up</li>
+                <li>maximize and monitor your inbox placement</li>
+                <li>train your staff from beginners to experts</li>
+            </ul>
+        </article>
+
+    </div>
+</section>        
+
+<section>
+    <div class="row g-3 my-4">
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+                <header>
+                    <h3 class="p-4">Your pages, your branding</h3>
+                </header>
+                <div class="p-4">
+                    <p>ActionKit's built-in page styling is bare-bones, which gives you total flexibility to style pages exactly the way you want.</p>
+                    <p><strong>Don't waste weeks of time</strong> trying to understand templatesets! Leave it to me to create them for you, precisely tailored to your design specs.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+            <header>
+                <h3 class="p-4">Deliverability</h3>
+            </header>
+            <div class="p-4">
+            <p>Stay out of the spam box and start improving your fundraising, open, click, and action rates today!</p>
+            <p>I've spent years helping ActionKit clients improve their inbox placement and deliverability, even after being blocked or put in spam, and I can help you too.</p>
+            </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+            <header>
+                <h3 class="p-4">Data collection and reporting</h3>
+            </header>
+            <div class="p-4">
+            <p>Are you collecting the data your campaign needs to succeed? Need help creating reports?</p>
+            <p>Whether you want to understand your users' lifetime value, where your best users are coming from, or anything else under the sun, I'll give you fast-running reports with easy-to-understand data to help inform your next move.</p>
+        </div>
+        </article>
+        </div>
+
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+            <header>
+                <h3 class="p-4">Worry-free Mailings</h3>
+            </header>
+            <div class="p-4">
+            <p>Your campaigners should be able to focus on writing compelling email content, not HTML under a time crunch.</p>
+            <p>I'll help you save time and avoid frustration with custom templates and ready to go layouts.</p>
+        </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+            <header>
+                <h3 class="p-4">Need a hand?</h3>
+            </header>
+            <div class="p-4">
+            <p>Sometimes you just need someone to answer your questions.</p>
+            <p>With over a decade of experience working with ActionKit and even longer in the movement, I can help with whatever's on your mind.</p>
+            <footer style="text-align: center;">
+                <a href="{% url 'services' %}#contact"><button class="btn">Contact</button></a>
+            </footer>
+        </div>
+        </article>
+        </div>
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+            <header>
+                <h3 class="p-4">Hate waiting? Me too.</h3>
+            </header>
+            <div class="p-4">
+            <p>No more waiting for your mailing to build!</p>
+            <p>I've helped dozens of clients get their mailings and reports built <strong><em>fast</em></strong>, even those with tens of millions of users.</p>
+        </div>
+        </article>
+        </div>
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+            <header>
+                <h3 class="p-4">Streamlined workflows</h3>
+            </header>
+            <div class="p-4">
+            <p>Save time, avoid mistakes, and get it all done easier with customized workflows that are built with your team and your goals in mind.</p>
+            <p>I've helped organizations large and small, and can make recommendations that keep your team's needs front and center.</p>
+        </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+            <header>
+                <h3 class="p-4">Unlock the power</h3>
+            </header>
+            <div class="p-4">
+            <p>ActionKit's API gives you the power to do so much, but unless you have a developer on staff, you're not able to make use of it.</p>
+            <p>I'll help you use all of the features ActionKit has to offer.</p>
+        </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 my-4 g-4">
+            <article class="d-flex flex-column">
+            <header>
+                <h3 class="p-4">Expert advice</h3>
+            </header>
+            <div class="p-4">
+            <p>I've fielded thousands of support requests, have given over a hundred trainings to organizations large and small, and that feature you like? Chances are I've worked on it!</p>
+            <p>With seven years (and counting) of experience on staff, I know what organizations and campaigns like yours need to succeed.</p>
+        </div>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+{% endblock content %}

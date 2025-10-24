@@ -1,0 +1,25 @@
+<html>
+<body>
+    <h3>Someone has submitted the contact form at <span style="color: #79C0FF;">fasterthanlight.tech!</span></h3>
+    <p>Here was the submission:</p>
+
+    <table width="900" style="border: 1px solid #333;">
+        {% for key, value in cleaned_data.items %}
+            <tr>
+                <th style="background-color: #ddd; font-weight: bold;">{{ key|title }}</th>
+                <td>
+                    {% if key == 'services' %}
+                        <ul>
+                            {% for item in value %}
+                                <li>{{ item.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        {{ value|linebreaksbr }}
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>

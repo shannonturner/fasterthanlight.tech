@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="row">
+
+    <div class="d-flex my-4" style="background: url('{% static "images/header.jpeg" %}'); background-position: bottom;">
+
+        <hgroup class="flex-grow-1">
+            <h1 class="my-3 mx-5 text-white">
+                <div>Custom-built solutions for <div id="software-for" class="spl d-inline-block" style="min-width: 12rem;">nonprofits</div></div>
+            </h1>
+        </hgroup>
+
+        <script>
+            var index = 0;
+            // I actually want "nonprofits" to sit a lil longer on screen, so it's here and above.
+            softwareFor = ["nonprofits", "unions", "campaigns", "the movement", "you"]
+            var interval = setInterval(function() {
+                var spanElement = document.getElementById("software-for")
+                if (index < softwareFor.length) {
+                    spanElement.innerText = softwareFor[index];
+                    index++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 1250)
+        </script>
+
+    </div>
+
+</section>
+
+<section class="row">
+
+    <div class="flex-sm-column flex-lg-row d-flex bg-card my-4">
+
+        <article class="d-flex flex-column justify-content-center m-auto">
+            <img class="d-none d-sm-block m-4" src="{% static 'images/orion-config.png' %}" alt="Adapted from Project Orion configuration (NASA, Public Domain)">
+        </article>
+
+        <article class="m-4">
+            <p>Founded in 2025 by Shannon Turner, <strong class="spl">supraluminique</strong> builds custom solutions to meet your organization's goals.</p>
+
+            <p>I specialize in serving the progressive movement, helping you get the most out of your existing tech and expanding your capabilities to help you go <strong class="spl">faster than light</strong>.</p>
+
+            <p>More than just providing software, I understand how all of the pieces fit together.</p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section>
+    <div class="row g-3 my-4">
+
+        <header class="col-sm-6 col-lg-3 g-4">
+            <h1 class="p-4 text-light">What sets <small class="spl">supraluminique</small> apart</h1>
+        </header>
+
+        <div class="col-sm-6 col-lg-3 g-4">
+            <article>
+                <header>
+                    <h3 class="p-4">Of the movement, for the movement</h3>
+                </header>
+                <div class="p-4">
+                    <p>I've spent my career in the progressive movement.</p>
+                    <p>I understand what organizations need and how good tech can empower organizations to win and improve our lives.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 g-4">
+            <article>
+                <header>
+                    <h3 class="p-4">Tech should serve people</h3>
+                </header>
+                <div class="p-4">
+                    <p>The best tech does what you want and gets out of your way so you can focus on what matters.</p>
+                    <p>I don't believe in building tech for tech's sake. If an off-the-shelf solution meets your needs, let's use it!</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 g-4">
+            <article>
+                <header>
+                    <h3 class="p-4">No AI</h3>
+                </header>
+                <div class="p-4">
+                    <p>There's a lot of hype around the promise of AI, but what of the costs?</p>
+                    <p>AI is harming communities, plagiarizing from creatives, making careers more precarious, and prone to embarrassing hallucinations.</p>
+                </div>
+            </article>
+        </div>
+
+    </div>
+
+    <div class="row g-3 my-4">
+
+        <div class="col-sm-6 col-lg-3 g-4">
+            <article>
+                <header>
+                    <h3 class="p-4">Software should be fast</h3>
+                </header>
+                <div class="p-4">
+                    <p>Slow tech is frustrating, difficult to use, and worst of all: unreliable.</p>
+                    <p>I build solutions that are fast, reliable, and scale to meet the largest campaigns.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 g-4">
+            <article>
+                <header>
+                    <h3 class="p-4">Security is paramount</h3>
+                </header>
+                <div class="p-4">
+                    <p>Your supporters trust you with their data.</p>
+                    <p>Honor that trust by choosing a professional who knows how to keep that data safe.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 g-4">
+            <article>
+                <header>
+                    <h3 class="p-4">Easy to use</h3>
+                </header>
+                <div class="p-4">
+                    <p>Even the best tools are worthless if you can't make full use of them.</p>
+                    <p>I'll help you get the most out of the tech you have so your most common tasks are fast and easy.</p>
+                </div>
+            </article>
+        </div>
+
+        <header class="order-sm-first order-lg-last col-sm-6 col-lg-3 g-4">
+            <hgroup>
+                <h1 class="p-4 text-light">Founding principles</h1>
+            </hgroup>
+        </header>
+
+    </div>
+
+</section>
+
+{% endblock content %}

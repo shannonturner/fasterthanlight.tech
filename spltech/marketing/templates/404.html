@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section>
+
+    <div>
+
+        <article class="d-flex flex-column justify-content-center">
+            <h1 class="m-4 p-4">Uh oh.</h1>
+            <p class="ms-5 mb-5">Luckily, we were prepared for this. You can always <a href="{% url 'home' %}">go home</a>.</p>
+            <img class="img-fluid" src="{% static 'images/404.png' %}" alt="Adapted from Project Orion configuration (NASA, Public Domain)">
+            
+        </article>
+
+    </div>
+
+</section>
+
+{% endblock content %}
+
+{% block footer_contact %}{% endblock footer_contact %}

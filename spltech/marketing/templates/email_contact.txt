@@ -1,0 +1,13 @@
+Someone has submitted the contact form at fasterthanlight.tech!
+Here was the submission:
+
+{% for key, value in cleaned_data.items %}
+    {{ key|title }}:
+            {% if key == 'services' %}
+                    {% for item in value %}
+                        * {{ item.name }}
+                    {% endfor %}
+            {% else %}
+                {{ value|linebreaksbr }}
+            {% endif %}
+{% endfor %}

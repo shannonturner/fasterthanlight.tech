@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section>
+
+    <div class="bg-card my-4 row">
+
+        <article class="d-flex flex-column col-lg-6">
+            <h1 class="p-4">Training</h1>
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3m555yWTaNI?si=9xbQ86PAahj1haYz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <footer class="p-4 pt-0">
+                <p><small>My training philosophy captured in a video of my 2018 PyCon talk: <em class="spl">You're an expert. Here's how to teach like one.</em></small></p>
+            </footer>
+        </article>
+
+        <article class="p-4 col-lg-6">
+            <p>With over 15 years of professional experience in creating and running trainings that make highly technical subjects accessible, I can help you and your colleagues go <strong class="spl">faster than light.</strong></p>
+
+            <p>All of my trainings are hands-on, filled with practical exercises drawn from real-world scenarios, and tailored to your specific needs.</p>
+
+            <p>I'd love to help you learn how to:</p>
+            <ul>
+                <li>create fast, advanced reports with SQL</li>
+                <li>customize ActionKit and take full advantage of its power and flexibility:</li>
+                <ul>
+                    <li>create custom reports and dashboards</li>
+                    <li>make your pages and mailings match your branding and design perfectly</li>
+                    <li>add new functionality to ActionKit</li>
+                    <li>... and SO much more</li>
+                </ul>
+            </ul>
+        </article>
+
+    </div>
+</section>        
+
+<section>
+    <div class="row g-3 my-4">
+
+        <header class="col-lg-4 g-4">
+            <h2 class="p-4">Trainings I'd like to customize for you</h2>
+        </header>
+
+        <div class="col-lg-4 g-4">
+        <article>
+            <header>
+                <h3 class="p-4">ActionKit</h3>
+            </header>
+            <div class="p-4">
+            <p>Since 2018, I've created and given over 100 custom trainings for ActionKit clients and <a href="https://www.youtube.com/playlist?list=PLnmX4wM34Ske_AN0bBSv6RDH59ALJASdl" target="_blank">recorded 20 general ActionKit trainings</a>, too.</p>
+            <p>I'd love to design a custom training for your team, based on <strong>your</strong> ActionKit, <strong>your</strong> needs, and <strong>your</strong> goals, filled with practical examples.</p>
+            </div>
+        </article>
+        </div>
+
+        <div class="col-lg-4 g-4">
+        <article>
+            <header>
+                <h3 class="p-4">Advanced reports with SQL</h3>
+            </header>
+            <div class="p-4">
+            <p>Point-and-click report tools can be helpful for those who want to create basic reports. But for advanced reporting and data analysis, you'll need a solid foundation of SQL.</p>
+            <p>I'd love to design a custom SQL training for your team, based on the specific database you have and the specific types of questions you want answered.</p>
+            </div>
+        </article>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock content %}

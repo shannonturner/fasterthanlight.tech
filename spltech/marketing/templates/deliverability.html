@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section>
+
+    <div class="bg-card my-4 row">
+
+        <article class="d-flex flex-column col-lg-3">
+            <h1 class="p-4">Email Deliverability</h1>
+            <img class="m-4 img-fluid d-none d-lg-block" src="{% static 'images/orion-module.png' %}" alt="Adapted from Project Orion Exploration-mission personnel accomodations (NASA JPL, Public Domain)">
+        </article>
+
+        <article class="p-4 col-lg-9">
+
+            <p>I've helped countless ActionKit clients improve their inbox placement and deliverability.</p>
+
+            <p>I can help you take your open, click, and action rates higher -- and improve your fundraising, too.</p>
+
+            {% comment %}
+                Strategies for Email Deliverability in a DMARC World (Netroots Nation, 2024) probably isn't worth mentioning, and I've never been able to find a link to the recording.
+            {% endcomment %}
+
+            <p>In addition to <a href="https://www.youtube.com/watch?v=gVuABY5LW00&list=PLnmX4wM34Ske_AN0bBSv6RDH59ALJASdl&index=6" target="_blank">providing expert advice</a> and writing a <a href="https://docs.actionkit.com/docs/manual/guide/deliverability.html" target="_blank">comprehensive guide</a> to maximizing your inbox placement, I've also contributed to several new tools and features intended to help you monitor your progress and make the most of every mailing.</p>
+
+            <p>This can be extremely helpful to organizations and campaigns whether they're on ActionKit or not, but if you want tailored advice that's just for you and your goals, let's talk.</p>
+
+        </article>
+
+    </div>
+</section>        
+
+<section>
+    <div class="row g-3 my-4">
+
+        <div class="col-lg-4 g-4">
+            <article class="d-flex flex-column">
+                <header>
+                    <h3 class="p-4">First, stay out of spam</h3>
+                </header>
+                <div class="p-4">
+                    <p>I can help analyze your current sending patterns and identify the most important things you need to do to stay out of the spam folder.</p>
+                    <p>Once we've taken those important first steps, you'll start to see your engagement rates climb.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 g-4">
+            <article class="d-flex flex-column">
+                <header>
+                    <h3 class="p-4">Reach more supporters</h3>
+                </header>
+                <div class="p-4">
+                    <p>Don't rest on your laurels. Even good senders can get stuck in a rut.</p>
+                    <p>With careful reputation monitoring and incremental improvements, I can help you build on the fundamentals to ensure your messages reach more of your supporters.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 g-4">
+            <article class="d-flex flex-column">
+                <header>
+                    <h3 class="p-4">Grow intelligently</h3>
+                </header>
+                <div class="p-4">
+                    <p>Growth is key for any campaign, but how can you grow without sacrificing engagement?</p>
+                    <p>It's possible to avoid "deliverability jail", and I've advised the largest, highest-profile campaigns on how to grow successfully. I can help yours, too.</p>
+                </div>
+            </article>
+            </div>
+
+    </div>
+
+</section>
+
+{% endblock content %}

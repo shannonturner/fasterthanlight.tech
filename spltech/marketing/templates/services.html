@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+{% endblock extra_css %}
+
+{% block content %}
+
+<section>
+
+    <div class="bg-card my-4 row">
+
+        <article class="d-flex flex-column col-lg-3">
+            <h1 class="p-4">Services</h1>
+            <img class="m-4 img-fluid d-none d-lg-block" src="{% static 'images/golden-record-explanation.png' %}" alt="Adapted from Voyager Golden Record Cover Explanation (NASA JPL, Public Domain)">
+        </article>
+
+        <article class="p-4 col-lg-9">
+
+            <p><strong class="spl">supraluminique</strong> doesn't offer one-size-fits-all services. Let's talk so I can provide you the best support for the vital work you're doing.</p>
+
+            <p>Most organizations and campaigns tend to need a combination of workflow improvements, expert advice, and additional training to help them get the most out of their tools.</p>
+
+            <p>I like to start by understanding your needs, learning how you're using your current toolset, and then putting together a custom plan so you can get the most out of what you've got.</p>
+
+            <p>If you've got specific goals (or frustrations) in mind, I'd love to hear what challenges you're facing so I can help you find the solutions.</p>
+
+        </article>
+
+    </div>
+</section>        
+
+<section>
+    <div class="row g-3 my-4">
+
+        <div class="col-lg-4 g-4">
+            <article class="d-flex flex-column justify-content-between">
+                <header>
+                    <h3 class="p-4">ActionKit</h3>
+                </header>
+                <div class="p-4">
+                    <p>I was an ActionKit client from 2014-2018, then joined the ActionKit team and spent 7 years developing powerful new features for the platform.</p>
+                    <p>I'd love to help you get the most out of the platform so your advocacy and electoral campaigns can win.</p>
+                </div>
+                <footer>
+                    <a href="{% url 'actionkit' %}"><button class="btn m-4">Learn more</button></a>
+                </footer>
+            </article>
+        </div>
+
+        <div class="col-lg-4 g-4">
+            <article class="d-flex flex-column justify-content-between">
+                <header>
+                    <h3 class="p-4">Email Deliverability</h3>
+                </header>
+                <div class="p-4">
+                    <p>I've spent years helping ActionKit clients improve their inbox placement and deliverability, even after being blocked or put in spam.</p>
+                    <p>Stay out of the spam box and start improving your fundraising, open, click, and action rates today!</p>
+                </div>
+                <footer>
+                    <a href="{% url 'deliverability' %}"><button class="btn m-4">Learn more</button></a>
+                </footer>
+            </article>
+        </div>
+
+        <div class="col-lg-4 g-4">
+            <article class="d-flex flex-column justify-content-between">
+            <header>
+                <h3 class="p-4">Training</h3>
+            </header>
+            <div class="p-4">
+                <p>Running a great training is <a href="https://www.youtube.com/watch?v=3m555yWTaNI" target="_blank"><strong>more than just knowing how to use a tool</strong></a>, it's a skill all its own.</p>
+                <p>With over 15 years of professional experience in training, I can help your team go <strong class="spl">faster than light</strong> on a variety of topics.</p>
+            </div>
+            <footer>
+                <a href="{% url 'training' %}"><button class="btn m-4">Learn more</button></a>
+            </footer>
+            </article>
+        </div>
+
+    </div>
+
+    <article class="my-4 gy-4 p-4">
+        <header>
+            <h3 class="py-4">Custom software, expert advice</h3>
+        </header>
+        <div class="p-4">
+            <p>Looking for something else, made just for you?</p>
+            <p>You know what you need built in order to win; I'll help you get there.</p>
+        </div>
+        <footer>
+            <a href="{% url 'services' %}#contact"><button class="btn mb-4">
+                Let's chat
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                </svg>
+            </button></a>
+        </footer>
+    </article>
+
+</section>
+
+{% endblock content %}
+
+{% block footer_contact %}
+    <section id="contact" class="row bg-card p-4 my-4">
+        <article>
+            <hgroup>
+                <h2>Let's talk about your goals and where you want to go.</h2>
+                <p class="muted">Schedule your free consultation today!</p>
+            </hgroup>
+            
+            <form id="contact-form" method="POST" action="{% url 'services' %}">
+
+                {% csrf_token %}
+                <div class="row">
+                    <div class="d-flex col-md-6">
+                        <fieldset class="d-flex flex-column m-4">
+
+                            <label class="my-3">
+                                {{ form.name.label }}
+                                {{ form.name }}
+                                {{ form.name.errors }}
+                            </label>
+
+                            <label class="my-3">
+                                {{ form.organization.label }}
+                                {{ form.organization }}
+                                {{ form.organization.errors }}
+                            </label>
+
+                            <label class="my-3">
+                                {{ form.phone.label }}
+                                {{ form.phone }}
+                                {{ form.phone.errors }}
+                            </label>
+
+                            <label class="my-3">
+                                {{ form.email.label }}
+                                {{ form.email }}
+                                {{ form.email.errors }}
+                                <div class="form-text text-warning m-2" id="email-suggestion"></div>
+                            </label>
+
+                        </fieldset>
+                    </div>
+
+                    <div class="col-md-6">
+
+                    <fieldset class="d-flex flex-column m-4 my-5">
+                        <legend>{{ form.services.label }}</legend>
+                        {{ form.services }}
+                        {{ form.services.errors }}
+                    </fieldset>
+                    </div>
+                </div> <!-- .row -->
+
+                <div class="row">
+                    <label>
+                        {{ form.additional_info.label }}
+                        {{ form.additional_info }}
+                        {{ form.additional_info.errors }}
+                        <div class="form-text">{{ form.additional_info.help_text }}</div>
+                    </label>
+                </div>
+
+                <button id="submit" class="btn my-3">Submit</button>
+                <div id="after-submit" class="form-text"></div>
+
+            </form>
+
+            <script src="{% static 'js/mailcheck.min.js' %}"></script>
+            <script type="text/javascript">
+
+                var emailInput = document.getElementById("id_email")
+                var emailSuggestion = document.getElementById("email-suggestion")
+                emailInput.addEventListener("blur", function() {
+                    Mailcheck.run({
+                        email: emailInput.value,
+                        suggested: function(suggestion) {
+                            if (suggestion.full) {
+                                emailSuggestion.innerText = "Did you mean " + suggestion.full + "?"
+                            }
+                        },
+                        empty: function() {
+                            emailSuggestion.innerText = ""
+                        }
+                    })
+                })
+
+                var submitButton = document.getElementById("submit")
+                var contactForm = document.getElementById("contact-form")
+                contactForm.addEventListener("submit", function() {
+                    var afterSubmitText = document.getElementById("after-submit")
+                    submitButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/></svg> Submitted'
+                    submitButton.classList.add('btn-success')
+                    afterSubmitText.innerText = "Thank you for your submission! I'll review your request and reach out to you shortly."
+                    submitButton.disabled = true
+                })
+            </script>
+        </article>
+    </section>
+{% endblock footer_contact %}

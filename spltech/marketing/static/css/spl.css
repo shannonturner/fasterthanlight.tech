@@ -1,0 +1,76 @@
+body.supraluminique {
+    font-family: "Avenir", sans-serif;
+    background-color: rgb(19, 22.5, 30.5);
+    color: #c2c7d0;
+}
+
+a#wordmark {
+    text-decoration: none;
+}
+
+#wordmark {
+    font-family: "Avenir", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.spl, a {
+    color: #79C0FF;
+    text-decoration-color: #79C0FF;
+}
+
+article {
+    font-size: 125%;
+}
+
+a.nav-link {
+    color: #79c0ff;
+}
+
+article, .bg-card {
+    background-color: #181c25;
+    height: 100%;
+}
+
+.muted {
+    color: #7b8495;
+}
+
+button.btn {
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+button.btn:not(.btn-success) {
+    background-color: #0081F3;
+}
+
+button.btn:hover {
+    background-color: #79c0ff;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: revert;
+    color: white;
+}
+
+.nav-item {
+    line-height: 3.5rem;
+}
+
+.errorlist {
+    color: rgba(255, 193, 7, 1);
+}
+
+@media only screen and (max-width: 991px) {
+    #navbarSupportedContent, .dropdown-item {
+        text-align: right;
+    }
+
+    ul.dropdown-menu {
+        width: 50%;
+        float: right;
+    }
+}
