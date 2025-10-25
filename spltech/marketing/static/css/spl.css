@@ -94,4 +94,9 @@ h1, h2, h3, h4, h5, h6 {
     .order-xs-first {
         order: -1 !important;
     }
+
+    img.img-fluid {
+        max-width: 30vw;
+        float: left;
+    }
 }
