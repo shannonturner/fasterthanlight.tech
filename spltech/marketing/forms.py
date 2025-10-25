@@ -77,7 +77,7 @@ class ContactForm(forms.ModelForm):
         )
 
         msg = EmailMultiAlternatives(
-            f"Received contact form submission at {datetime.datetime.now().isoformat(timespec='seconds')}",
+            f"Received contact form submission from {self.cleaned_data['name']} with {self.cleaned_data['organization']} at {datetime.datetime.now().isoformat(timespec='seconds')}",
             text_content,
             settings.DEFAULT_FROM_EMAIL,
             [settings.CONTACT_FORM_EMAIL_TO],

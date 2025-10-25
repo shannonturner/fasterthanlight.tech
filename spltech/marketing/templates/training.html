@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}Training - Supraluminique - Software faster than light{% endblock title %}
+
 {% block content %}
 
 <section>
@@ -8,7 +10,7 @@
     <div class="bg-card my-4 row">
 
         <article class="d-flex flex-column col-lg-6">
-            <h1 class="p-4">Training</h1>
+            <h1 class="p-4 d-none d-lg-block">Training</h1>
             <div class="ratio ratio-16x9">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/3m555yWTaNI?si=9xbQ86PAahj1haYz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -17,7 +19,8 @@
             </footer>
         </article>
 
-        <article class="p-4 col-lg-6">
+        <article class="order-xs-first p-4 col-lg-6">
+            <h1 class="p-4 d-lg-none">Training</h1>
             <p>With over 15 years of professional experience in creating and running trainings that make highly technical subjects accessible, I can help you and your colleagues go <strong class="spl">faster than light.</strong></p>
 
             <p>All of my trainings are hands-on, filled with practical exercises drawn from real-world scenarios, and tailored to your specific needs.</p>

@@ -64,13 +64,34 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(255, 193, 7, 1);
 }
 
+@media only screen and (max-width: 575px) {
+    button.navbar-toggler {
+        flex-grow: 1;
+        text-align: right;
+        border: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: 1px solid;
+    }
+}
+
 @media only screen and (max-width: 991px) {
+    #wordmark {
+        display: flex;
+        flex-direction: column;
+    }
+
     #navbarSupportedContent, .dropdown-item {
         text-align: right;
     }
 
     ul.dropdown-menu {
-        width: 50%;
         float: right;
+        text-align: right;
+    }
+
+    .order-xs-first {
+        order: -1 !important;
     }
 }
