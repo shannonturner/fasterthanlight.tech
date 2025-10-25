@@ -9,6 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>{% block title %}Supraluminique - Software faster than light{% endblock title %}</title>
 
+    {% block meta_title %}
+        <meta property="og:title" content="Supraluminique - Software faster than light">
+        <meta name="twitter:title" content="Supraluminique - Software faster than light">
+    {% endblock meta_title %}
+
+    {% block meta_image %}
+        <meta property="og:image" content="https://fasterthanlight.tech{% static "images/header.jpeg" %}">
+        <meta name="twitter:image:src" content="https://fasterthanlight.tech{% static "images/header.jpeg" %}">
+    {% endblock meta_image %}
+
+    <meta name="description" content="supraluminique builds custom solutions to meet your organization's goals. I specialize in serving the progressive movement, helping you get the most out of your existing tech and expanding your capabilities to help you go faster than light.">
+    <meta property="og:description" content="supraluminique builds custom solutions to meet your organization's goals. I specialize in serving the progressive movement, helping you get the most out of your existing tech and expanding your capabilities to help you go faster than light.">
+    <meta name="twitter:description" content="supraluminique builds custom solutions to meet your organization's goals. I specialize in serving the progressive movement, helping you get the most out of your existing tech and expanding your capabilities to help you go faster than light.">
+
+    <meta property="og:site_name" content="fasterthanlight.tech">
+    <meta property="og:url" content="https://fasterthanlight.tech">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://fasterthanlight.tech">
+
     <style>
         {% block extra_css %}{% endblock extra_css %}
     </style>
