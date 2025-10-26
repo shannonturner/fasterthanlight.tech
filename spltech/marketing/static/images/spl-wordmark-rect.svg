@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="115.63864mm"
+   height="36.761158mm"
+   viewBox="0 0 115.63864 36.761158"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="g8"
+     style="fill:none;fill-opacity:1"
+     transform="translate(13.170626,110.40669)">
+    <g
+       id="g7"
+       transform="translate(-47.208142,-132.29879)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#79c0ff;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         d="M 39.488244,100.33351 C 84.871915,88.987592 130.25468,77.6419 145.9576,78.643029 c 15.70291,1.00113 1.72472,14.349001 -12.25374,27.697131"
+         id="path8"
+         transform="translate(-4.404661,-55.6875)" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,28.944915,-27.686441)"
+         id="text6"
+         style="font-size:64px;white-space:pre;shape-inside:url(#rect8);display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3.77953;stroke-opacity:1"><tspan
+           x="19.025391"
+           y="278.37352"
+           id="tspan5"><tspan
+             style="font-family:Avenir;-inkscape-font-specification:'Avenir, Normal'"
+             id="tspan4">supraluminique</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,4.2716291,-61.916632)"
+         id="text8"
+         style="font-style:oblique;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Avenir;-inkscape-font-specification:'Avenir, Light Oblique';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect9);display:inline;fill:none;fill-opacity:1;stroke:#79c0ff;stroke-width:2.26772;stroke-dasharray:none;stroke-opacity:1"><tspan
+           x="116.03516"
+           y="446.88337"
+           id="tspan6">software faster than light</tspan></text>
+    </g>
+  </g>
+</svg>

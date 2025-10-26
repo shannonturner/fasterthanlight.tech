@@ -4,7 +4,7 @@ body.supraluminique {
     color: #c2c7d0;
 }
 
-a#wordmark {
+a#link-home {
     text-decoration: none;
 }
 
@@ -12,6 +12,10 @@ a#wordmark {
     font-family: "Avenir", sans-serif;
     font-weight: 600;
     color: white;
+}
+
+#svg-wordmark {
+    max-height: 10vh;
 }
 
 .spl, a {
@@ -77,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 991px) {
-    #wordmark {
+    #link-home, #wordmark {
         display: flex;
         flex-direction: column;
     }

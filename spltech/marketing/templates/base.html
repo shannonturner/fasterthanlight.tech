@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="dark">
-    <link href="{% static 'css/spl.css' %}" rel="stylesheet">
+    <link href="{% static 'css/spl.css' %}?version=20251026" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>{% block title %}Supraluminique - Software faster than light{% endblock title %}</title>
 
@@ -18,6 +18,12 @@
         <meta property="og:image" content="https://fasterthanlight.tech{% static "images/header.jpeg" %}">
         <meta name="twitter:image:src" content="https://fasterthanlight.tech{% static "images/header.jpeg" %}">
     {% endblock meta_image %}
+
+    <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}">
 
     <meta name="description" content="supraluminique builds custom solutions to meet your organization's goals. I specialize in serving the progressive movement, helping you get the most out of your existing tech and expanding your capabilities to help you go faster than light.">
     <meta property="og:description" content="supraluminique builds custom solutions to meet your organization's goals. I specialize in serving the progressive movement, helping you get the most out of your existing tech and expanding your capabilities to help you go faster than light.">
@@ -40,7 +46,10 @@
         <nav class="navbar navbar-expand-lg d-flex fw-semibold">
           <ul>
             <li style="list-style-type: none;">
-                <a id="wordmark" href="{% url 'home' %}"><h1 id="wordmark">supraluminique <small class="spl" style="font-size: 75%;">software faster than light</small></h1></a>
+                <a id="link-home" href="{% url 'home' %}">
+                    <h1 id="wordmark" class="d-block d-sm-none">supraluminique <small class="spl" style="font-size: 75%;">software faster than light</small></h1>
+                    <img id="svg-wordmark" class="d-none d-sm-block" src="{% static 'images/spl-wordmark-rect.svg' %}">
+                </a>
             </li>
           </ul>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
